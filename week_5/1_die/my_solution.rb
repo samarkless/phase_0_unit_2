@@ -15,14 +15,17 @@
 class Die
   def initialize(sides)
     # code goes here
+    @sides=sides
   end
   
   def sides
     # code goes here
+    @sides
   end
   
   def roll
     # code goes here
+    rand(@sides)
   end
 end
 
@@ -38,6 +41,9 @@ end
 # 1. DRIVER TESTS GO BELOW THIS LINE
 
 
+die = Die.new(6)
+puts die.sides
+puts die.roll
 
 
 
