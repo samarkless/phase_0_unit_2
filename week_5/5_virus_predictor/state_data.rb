@@ -1,6 +1,8 @@
 #population density is number of people per square mile as of 2012
 #this data is updated every year with estimates from a 10 year census 
-
+#
+# STATE_DATA is a hash that is filled with another hash. The first is made up of the state names as the keys, and the data as the value. 
+# Then the second hash within that hash is made up of symbols that serve as keys which serves as a placeholder for the statistics that are the values. 
 
 STATE_DATA = {  "Alabama" => {population_density: 94.65, population: 4822023, region: 5, regional_spread: 3},
                 "Alaska" => {population_density: 1.1111, population: 731449, region: 10, regional_spread: 9},
